@@ -4,6 +4,9 @@ import "./App.css"
 import Landing from "./components/Landing"
 import EnterID from "./components/EnterID"
 import Results from "./components/Results"
+import Loading from "./components/Loading"
+import NewResults from "./components/NewResults"
+import Thankyou from "./components/Thankyou"
 
 class App extends Component {
   constructor() {
@@ -15,7 +18,7 @@ class App extends Component {
 
   handleConfirm = e => {
     e.preventDefault()
-    this.handleRender("IDconfirmed")
+    this.handleRender("Results")
   }
 
   handleRender = render => {
@@ -31,8 +34,18 @@ class App extends Component {
           return <Landing handleRender={this.handleRender} />
         case "enterID":
           return <EnterID handleConfirm={this.handleConfirm} />
-        case "IDconfirmed":
-          return <Results />
+        case "Results":
+          return <Results handleRender={() => this.handleRender("Loading")} />
+        case "Loading":
+          return (
+            <Loading handleRender={() => this.handleRender("newResults")} />
+          )
+        case "newResults":
+          return (
+            <NewResults handleRender={() => this.handleRender("thankyou")} />
+          )
+        case "thankyou":
+          return <Thankyou handleRender={() => this.handleRender("Landing")} />
         default:
           return <Landing handleRender={this.handleRender} />
       }
