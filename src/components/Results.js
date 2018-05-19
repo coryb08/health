@@ -70,7 +70,21 @@ class Results extends Component {
     return (
       <div id="results">
         <div id="blueHeader" />
+        <div id="rh">Amy Smith</div>
+        <div id="rsh">Astellas ID: AM0808424</div>
         <div id="headerLogo" />
+        <h1>HCP Prioritization</h1>
+        <h3>
+          Please prioritize the HCPs by reordering them from top to bottom based
+          on the criteria below (Click & Drag).
+        </h3>
+        <div id="divider2" />
+        <h4>
+          <strong>Criteria:</strong> Lorem ipsum dolor sit amet, arcu neque duis
+          elit at, morbi vel lectus ut, elementum sit, adipiscing venenatis
+          metus sed lectus dictum. Massa bibendum cursus arcu, morbi lobortis in
+          donec sed in nec.
+        </h4>
         <SortableList items={this.state.items} onSortEnd={this.onSortEnd} />
         <button onClick={this.props.handleRender}>Submit</button>
       </div>

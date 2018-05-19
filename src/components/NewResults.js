@@ -60,7 +60,10 @@ class NewResults extends Component {
     return (
       <div id="results">
         <div id="blueHeader" />
+        <div id="rh">Amy Smith</div>
+        <div id="rsh">Astellas ID: AM0808424</div>
         <div id="headerLogo" />
+        <h1>HCP Prioritization with New MLI Insights</h1>
         <div id="itemList2">
           <div id="columns2">
             <p>Decile</p>
