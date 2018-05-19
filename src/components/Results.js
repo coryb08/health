@@ -69,7 +69,8 @@ class Results extends Component {
   render() {
     return (
       <div id="results">
-        <h1>Sample Results</h1>
+        <div id="blueHeader" />
+        <div id="headerLogo" />
         <SortableList items={this.state.items} onSortEnd={this.onSortEnd} />
         <button onClick={this.props.handleRender}>Submit</button>
       </div>

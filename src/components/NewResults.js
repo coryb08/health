@@ -59,16 +59,17 @@ class NewResults extends Component {
   render() {
     return (
       <div id="results">
-        <h1>New Sample Results</h1>
+        <div id="blueHeader" />
+        <div id="headerLogo" />
         <div id="itemList2">
           <div id="columns2">
             <p>Decile</p>
-            <p>Myr NRx</p>
-            <p>Myr NRx Share</p>
-            <p>Predicted Myr NRx in Next Quarter</p>
-            <p>Opportunity Decile</p>
-            <p>Risk Decile</p>
-            <p>Incremental NRx Next Detail</p>
+            <p> Prior 6 month Myr NRx</p>
+            <p>Prior 6 month Myr NRx Share</p>
+            <p>MLI Opportunity Flag</p>
+            <p>MLI Predicted Myrbetriq NRx for FQ1</p>
+            <p>MLI NRx Response Score</p>
+            <p>MLI Market Share Risk Bracket</p>
           </div>
           <div id="rankContainer">
             <div className="rank">
@@ -83,20 +84,27 @@ class NewResults extends Component {
                   <h4>{"Dr. " + value.name}</h4>
                 </div>
                 <div className="innerBox2">
-                  <h3>34</h3>
-                  <h3>22</h3>
-                  <h3>42</h3>
-                  <h3>34</h3>
-                  <h3>22</h3>
-                  <h3>42</h3>
-                  <h3>42</h3>
+                  <div id="hContainer">
+                    <h3>34</h3>
+                    <h3>22</h3>
+                    <h3>42</h3>
+                  </div>
+                  <div id="pContainer">
+                    <p>MYRBETRIQ Projected 48% increase</p>
+                    <p>Xtandi Second Position Strong</p>
+                    <p>High Call Responsive</p>
+                    <p>TBD</p>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
+        <h2>
+          Do the new MLI Insights change your perception of HCP prioritization?
+        </h2>
         <button onClick={this.props.handleRender}>Yes</button>
-        <button>No</button>
+        <button onClick={this.props.handleRender}>No</button>
       </div>
     )
   }

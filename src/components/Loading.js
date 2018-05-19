@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import logo from "../imgs/logo.png"
 
 class Loading extends Component {
   constructor(props) {
@@ -14,6 +13,8 @@ class Loading extends Component {
   render() {
     return (
       <div className="loading">
+        <div id="blueHeader" />
+        <div id="headerLogo" />
         <h2>
           MLI is working to provide you with additional insights to help
           prioritize your HCPs.
