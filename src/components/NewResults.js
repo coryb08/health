@@ -93,10 +93,10 @@ class NewResults extends Component {
                     <h3>42</h3>
                   </div>
                   <div id="pContainer">
-                    <p>MYRBETRIQ Projected 48% increase</p>
-                    <p>Xtandi Second Position Strong</p>
-                    <p>High Call Responsive</p>
-                    <p>TBD</p>
+                    <h22>MYRBETRIQ Projected 48% increase</h22>
+                    <h22>Xtandi Second Position Strong</h22>
+                    <h22>High Call Responsive</h22>
+                    <h22>TBD</h22>
                   </div>
                 </div>
               </div>

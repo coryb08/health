@@ -1,7 +1,7 @@
 html,
 body {
   width: 100vw;
-  height: 100vh;
+  height: 100;
   overflow: hidden;
   position: fixed;
   margin: 0;
@@ -98,6 +98,7 @@ button {
   background-size: cover;
   background-position: center;
   width: 800px;
+
   margin-left: 0;
   padding: 0;
   float: left;
@@ -146,7 +147,7 @@ button {
   border-radius: 3px;
   display: block;
   font-size: 28pt;
-  margin: 200px auto 50px auto;
+  margin: 5% auto 50px auto;
   background-color: #f2f2f2;
   color: #666666;
   text-transform: uppercase;
@@ -155,7 +156,7 @@ button {
 #enterIDbutton {
   width: 250px;
   height: 70px;
-  transform: translate(224px, 0);
+  transform: translate(224px, -10px);
 }
 
 #results {
@@ -164,11 +165,11 @@ button {
 }
 
 #results > button {
-  margin: -30px 50px auto 50px;
+  margin: -40px 50px auto 50px;
 }
 
 #results > h2 {
-  margin-top: 75px;
+  margin-top: 50px;
   margin-bottom: 50px;
   font-weight: 500;
 }
@@ -178,7 +179,7 @@ button {
   text-align: left;
   padding-left: 130px;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 #results > h3 {
@@ -186,7 +187,7 @@ button {
   font-size: 21px;
   padding-left: 130px;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 1px;
 }
 
 #results > h4 {
@@ -197,7 +198,7 @@ button {
   font-weight: 200;
   padding-left: 130px;
   margin: 0;
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: left;
   width: 1100px;
 }
@@ -213,12 +214,12 @@ button {
   width: 700px;
   height: 2px;
   background-color: gray;
-  transform: translate(130px, 25px) !important;
+  transform: translate(130px, 12px) !important;
 }
 
 #columns {
   margin: auto;
-  margin-top: 50px;
+  margin-top: 20px;
   height: 25px;
   width: 1006px;
   padding-right: 250px;
@@ -422,19 +423,20 @@ button {
   color: #666666;
 }
 
-#pContainer > p {
+#pContainer > h22 {
   color: #2c4d8d !important;
   width: 89px;
   display: inline-block;
-  padding: 12px 18px 0 18px;
+  padding: 20px 18px 0 18px;
   font-weight: 400;
   color: #666666;
+  font-size: 12px;
 }
 
 #itemList2 {
   margin: auto;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 #columns2 {

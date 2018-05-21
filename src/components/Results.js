@@ -62,9 +62,15 @@ class Results extends Component {
   }
 
   onSortEnd = ({ oldIndex, newIndex }) => {
-    this.setState({
-      items: arrayMove(this.state.items, oldIndex, newIndex)
-    })
+    console.log("before ", this.state.items)
+    this.setState(
+      {
+        items: arrayMove(this.state.items, oldIndex, newIndex)
+      },
+      () => {
+        console.log("after ", this.state.items)
+      }
+    )
   }
   render() {
     return (
